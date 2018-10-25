@@ -10,6 +10,8 @@
 
 <div id="app">
 	{{ msg }}
+
+	<p v-bind:title="titulo">Exposição de carros antigos e modificados atrai grande público ao câmpus 2 da URI</p>
 </div>
 
 <!--implementação basica-->
@@ -19,7 +21,9 @@
 
 		el:"#app",
 		data:{
-			msg:'Iniciando com Vue JS'
+			msg:'Iniciando com Vue JS',
+			//manipulando atributo title
+			titulo:"texto sobre carros"
 		}
 	})
 
