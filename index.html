@@ -1,20 +1,27 @@
 <!DOCTYPE HTML>
-<<html>
+<html>
 <head>
 	<meta charset="utf-8">
 	<title>Introdução Vue JS</title>
 	<!--Declaração da biblioteca do VUE. uma das formas de se trabalhar com VUE -->
-	<script type="http://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/vue"></script>
 </head>
 <body>
 
 <div id="app">
-
+	{{ msg }}
 </div>
 
 <!--implementação basica-->
 <script type="text/javascript">
 
+	var app = new Vue({
+
+		el:"#app",
+		data:{
+			msg:'Iniciando com Vue JS'
+		}
+	})
 
 </script>
 </body>
