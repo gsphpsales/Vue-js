@@ -13,6 +13,11 @@
 
 	<p v-bind:title="titulo">Input com v-model</p>
 	
+	<!-- ao digitar no input, o mesmo sera atribuido a variavel dentro do script-->
+	<input type="text" v-model="usuario.nome">
+
+	<!-- Os dados do input será impresso em tempo real-->
+	<p>Nome:{{usuario.nome}}</p>
 
 </div>
 
@@ -26,7 +31,7 @@
 			msg:'Iniciando com Vue JS',
 			//manipulando atributo title  
 			titulo:"apredizagem basica",
-			
+			usuario:{nome:""}
 		}
 	})
 
