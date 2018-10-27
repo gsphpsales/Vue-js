@@ -9,11 +9,19 @@
 <body>
 
 <div id="app">
-	
+
+	<gstitle></gstitle>
+
 </div>
 
 <!--implementação basica-->
 <script type="text/javascript">
+	//desta forma você pode manipular o template do seu projeto 
+	//com um arquivo de componentes externos.
+	Vue.component('gstitle', {
+		template:'<h2>Componente title</h2>'
+
+	});
 
 	var app = new Vue({
 
